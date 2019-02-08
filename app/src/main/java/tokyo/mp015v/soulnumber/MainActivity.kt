@@ -48,18 +48,25 @@ class MainActivity : AppCompatActivity() {
         val txt_birthday = findViewById(R.id.txt_birth) as TextView
         val txt_soulnumber = findViewById(R.id.txt_soulnum2) as TextView
 
+        if( birthday != null ){
+            txt_birthday.text = birthday
+        }
+        if( soulnumber > 0 ){
+            txt_soulnumber.text = "ソウルナンバー:${soulnumber}"
+        }
+
         //イベント登録
         btn_birthday.setOnClickListener {
-
             val dialog = DatePickerDialog(
                     this,
                     {view, year, month, dayOfMonth ->
-                        txt_birthday.text = "誕生日:${year}年${month+1}月${dayOfMonth}日"
+                        birthday =  "誕生日:${year}年${month+1}月${dayOfMonth}日"
+                        txt_birthday.text = birthday
 
                         soulnumber = getSoulNumber( year,month+1,dayOfMonth )
 
                         txt_soulnumber.text = "ソウルナンバー:${soulnumber}"
-                    },2000,1,1
+                    },2000,0,1
             )
             dialog.show()
         }
