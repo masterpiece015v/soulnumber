@@ -9,12 +9,14 @@
     <Button
         android:id="@+id/btn_birthday"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="302dp"
+        android:layout_width="0dp"
         android:layout_height="63dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:text="あなたの誕生日"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,10 +24,10 @@
         android:id="@+id/txt_birth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="32dp"
         android:text="誕生日:"
-        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_birthday" />
 
@@ -33,34 +35,38 @@
         android:id="@+id/txt_soulnum2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="32dp"
         android:text="ソウルナンバー:"
-        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_birth" />
 
     <Button
         android:id="@+id/btn_comp"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="303dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:text="気になるあの人と・・・"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_personal" />
 
     <Button
         android:id="@+id/btn_personal"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="303dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:text="あなたの性格"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_soulnum2" />
 
