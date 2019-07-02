@@ -159,7 +159,6 @@ fun getComp(s1 : Int , s2 :Int , c : String ):Content?{
 }
 
 class Main2Activity : AppCompatActivity() {
-
     companion object {
         //ソウルナンバー
         var soulnum = 0
